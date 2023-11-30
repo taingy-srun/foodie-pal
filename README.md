@@ -11,4 +11,6 @@ Project's features:
 
 # Screenshots
 
-<img width="460" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/login.png">
+<img width="400" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/login.png">
+
+<img width="400" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/about_me.png">

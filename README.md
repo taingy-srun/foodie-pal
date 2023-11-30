@@ -11,4 +11,4 @@ Project's features:
 
 # Screenshots
 
-![Login](https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/login.png)
+<img width="460" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/login.png">

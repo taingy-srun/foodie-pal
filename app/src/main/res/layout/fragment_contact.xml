@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.ContactFragment">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_call"
+            android:drawableLeft="@drawable/ic_call"
+            android:layout_centerHorizontal="true"
+            android:text="Call Us"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/lay_or"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="100dp"
+                android:layout_margin="35dp"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="OR"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="100dp"
+                android:layout_margin="35dp"
+                android:layout_height="2dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_email"
+            android:layout_below="@id/lay_or"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_email"
+            android:text="Email"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

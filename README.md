@@ -10,7 +10,7 @@ Project's features:
 - And about the developer
 
 # Screenshots
-
-<img width="300" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/login.png">
-
-<img width="300" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/about_me.png">
+<p float="left">
+  <img width="250" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/login.png">
+  <img width="250" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/about_me.png">  
+</p>

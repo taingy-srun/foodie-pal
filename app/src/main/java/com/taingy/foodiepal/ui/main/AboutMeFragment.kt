@@ -33,14 +33,15 @@ class AboutMeFragment : Fragment() {
 
     private fun showInputDialog(context: Context) {
         val builder = AlertDialog.Builder(context)
-        builder.setTitle("Adding new favorite food:")
-
-        val input = EditText(context)
-        builder.setView(input)
+        val inflater = requireContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val view: View = inflater.inflate(R.layout.custom_alert_dialog_1, null)
+        builder.setView(view)
+        builder.setTitle("Adding new favorite food")
 
         builder.setPositiveButton("OK") { _, _ ->
+            val input: EditText = view.findViewById(R.id.etNewFood)
             val food = input.text.toString()
-            list.add(food)
+            if (food.isNotEmpty()) list.add(food)
         }
         builder.setNegativeButton("Cancel") { dialog, _ -> dialog.cancel() }
         builder.show()

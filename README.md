@@ -1,6 +1,6 @@
 # foodie-pal
 
-This is a project for the MDP course.
+This is a project for the Mobile Device Programming (CS473) course.
 
 Project's features:
 - Display a list of Recipes
@@ -12,5 +12,7 @@ Project's features:
 # Screenshots
 <p float="left">
   <img width="250" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/login.png">
+  <img width="250" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/recipes.png">
+  <img width="250" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/meal_planner.png">
   <img width="250" src="https://github.com/taingy-srun/foodie-pal/blob/main/app/screenshots/about_me.png">  
 </p>

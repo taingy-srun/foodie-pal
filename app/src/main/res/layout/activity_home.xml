@@ -8,10 +8,12 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
+        app:tabMode="scrollable"
+        app:tabGravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <androidx.viewpager.widget.ViewPager
+    <androidx.viewpager2.widget.ViewPager2
         android:layout_below="@id/tabs"
         android:id="@+id/view_pager"
         android:layout_width="match_parent"

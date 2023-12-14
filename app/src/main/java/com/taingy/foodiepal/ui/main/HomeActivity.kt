@@ -7,6 +7,11 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayoutMediator
 import com.taingy.foodiepal.R
 import com.taingy.foodiepal.databinding.ActivityHomeBinding
+import com.taingy.foodiepal.ui.aboutme.AboutMeFragment
+import com.taingy.foodiepal.ui.blog.BlogFragment
+import com.taingy.foodiepal.ui.contact.ContactFragment
+import com.taingy.foodiepal.ui.mealplanner.MealPlannerFragment
+import com.taingy.foodiepal.ui.recipes.RecipesFragment
 
 class HomeActivity : AppCompatActivity() {
 

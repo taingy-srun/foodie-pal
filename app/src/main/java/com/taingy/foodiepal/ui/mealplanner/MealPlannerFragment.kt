@@ -1,4 +1,4 @@
-package com.taingy.foodiepal.ui.main
+package com.taingy.foodiepal.ui.mealplanner
 
 import androidx.fragment.app.Fragment
 import com.taingy.foodiepal.R

@@ -1,4 +1,4 @@
-package com.taingy.foodiepal.ui.main
+package com.taingy.foodiepal.ui.aboutme
 
 import android.app.AlertDialog
 import android.content.Context

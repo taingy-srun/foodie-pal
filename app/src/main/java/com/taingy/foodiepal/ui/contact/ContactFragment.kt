@@ -1,4 +1,4 @@
-package com.taingy.foodiepal.ui.main
+package com.taingy.foodiepal.ui.contact
 
 import android.content.Intent
 import android.net.Uri

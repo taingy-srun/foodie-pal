@@ -1,30 +1,45 @@
 package com.taingy.foodiepal.ui.main
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.taingy.foodiepal.R
-import com.taingy.foodiepal.databinding.FragmentContactBinding
 
-class ContactFragment : Fragment(R.layout.fragment_contact) {
-    private lateinit var binding: FragmentContactBinding
+class ContactFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = FragmentContactBinding.inflate(layoutInflater)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_contact, container, false)
 
-        binding.btCall.setOnClickListener {
-            val callIntent = Intent().apply {
-                action = Intent.ACTION_DIAL
-            }
-            startActivity(callIntent)
+        val btCall: Button = view.findViewById(R.id.bt_call)
+        btCall.setOnClickListener {
+            val phoneNumber = "tel:6412339343"
+            val dialIntent = Intent(Intent.ACTION_DIAL, Uri.parse(phoneNumber))
+            startActivity(dialIntent)
         }
 
-        binding.btEmail.setOnClickListener {
-            val callIntent = Intent().apply {
-                action = Intent.ACTION_SEND
-            }
-            startActivity(callIntent)
+        val btEmail: Button = view.findViewById(R.id.bt_email)
+        btEmail.setOnClickListener {
+            val recipient = "taingy.srun20@gmail.com"
+            val subject = "Feedback on Recipes"
+
+            val emailIntent = Intent(Intent.ACTION_SEND)
+            emailIntent.type = "text/plain"
+            emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(recipient))
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject)
+
+            startActivity(emailIntent)
         }
+
+        return view
     }
+
 }
